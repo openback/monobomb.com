@@ -91,7 +91,7 @@ body {
     font-size: 100%;
     line-height: 100%;
     color: #ebebeb;
-    background-color: #000;
+    background-color: #080808;
 }
 
 p {
@@ -141,11 +141,19 @@ section .number,
     background-image: url('../images/sprite-sheet-1.png');
 }
 
+header .wrapper {
+    padding: 40px 0 40px 0;
+}
+
 .logo {
     display: block;
-    margin: 40px;
     width: 155px;
     height: 121px;
+    margin-left: 40px;
+}
+
+header, footer {
+    background-color: #000;
 }
 
 footer {
@@ -163,7 +171,6 @@ footer .wrapper {
 section {
     width: 100%;
     min-height: 158px;
-    background-color: #080808;
     background-image: url('../images/divider_tall.png');
     background-repeat: repeat-x;
     color: #fff;
@@ -274,7 +281,6 @@ section .content {
 #events .button:active {
     background-position: -148px -259px;
 }
-
 
 
 
