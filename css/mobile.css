@@ -1,0 +1,21 @@
+p {
+    margin-top: 10px;
+}
+
+.wrapper {
+    max-width: auto;
+    font-size: 1.25em;
+    padding-right: 10px;
+}
+
+section .number {
+    display: none;
+}
+
+section .content {
+    padding: 42px 0 30px 10px;
+}
+
+header .wrapper {
+    padding: 20px 0 20px 0;
+}

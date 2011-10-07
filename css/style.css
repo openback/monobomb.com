@@ -170,7 +170,6 @@ footer .wrapper {
 
 section {
     width: 100%;
-    min-height: 158px;
     background-image: url('../images/divider_tall.png');
     background-repeat: repeat-x;
     color: #fff;
