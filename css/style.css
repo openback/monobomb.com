@@ -86,37 +86,72 @@ a:hover { color: #036; }
     \\ ========================================== //
 */
 body {
-    background-color: #000;
-    margin:10px;
-    font-family: Comfortaa, Verdana, Arial, sans-serif;
+    height: 100%;
+    font-family: TeXGyreAdventor,Verdana,Arial,Helvetica,sans-serif;
     font-size: 100%;
     line-height: 100%;
-    color: #7f7f7f;
+    color: #ebebeb;
+    background-color: #000;
 }
 
-#main {
-    display: block;
+p {
+    margin-bottom: 40px;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 1.8em;
+    line-height: 1.2em;
     position: relative;
-    overflow: hidden;
-    width: 5100px;
-    height: 700px;
-    margin-bottom: 10px;
 }
-article,
-img {
-    width: 500px;
-    height: 700px;
+
+header img {
+    margin: 40px;
 }
+
+footer {
+    width: 100%;
+    background-image: url('../images/divider_tall.png');
+    background-repeat: repeat-x;
+}
+
+footer .wrapper {
+    padding: 40px 0 40px 0;
+    font-size: 0.7em;
+    text-align: center;
+}
+
 article {
-    float: left;
-    margin-right: 10px;
+    width: 100%;
+    min-height: 158px;
+    background-color: #080808;
+    background-image: url('../images/divider_tall.png');
+    background-repeat: repeat-x;
+    color: #fff;
 }
-article a {
-    display: block;
+
+article .number {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 78px;
+    height: 78px;
     overflow: hidden;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-image: url('../images/circled-numbers.png');
 }
 
+article .content {
+    padding: 40px 40px 40px 158px;
+}
 
+#music .number { background-position:   0px 0px; }
+#events .number { background-position: -78px 0px; }
+#social .number { background-position:-156px 0px; }
+#about .number { background-position:-234px 0px; }
+#contact .number { background-position:-312px 0px; }
 
 
 
