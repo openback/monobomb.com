@@ -95,13 +95,23 @@ body {
 }
 
 p {
-    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+a {
+    -webkit-transition: color .20s linear, background-color .20s linear;
+    -moz-transition: color .20s linear, background-color .20s linear;
+    transition: color .20s linear, background-color .20s linear;
 }
 
 a:link,
 a:visited {
     color: #6c5eb5;
     text-decoration: none;
+}
+
+a:hover {
+    color: #beb1ff;
 }
 
 h1 {
@@ -120,9 +130,21 @@ em { font-style: italic; }
     position: relative;
 }
 
-header img {
+section .number,
+.logo,
+.button {
+    display: inline-block;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    background-image: url('../images/sprite-sheet-1.png');
+}
+
+.logo {
     display: block;
     margin: 40px;
+    width: 155px;
+    height: 121px;
 }
 
 footer {
@@ -152,21 +174,17 @@ section .number {
     left: 40px;
     width: 78px;
     height: 78px;
-    overflow: hidden;
-    text-indent: -9999px;
-    background-repeat: no-repeat;
-    background-image: url('../images/circled-numbers.png');
 }
 
 section .content {
     padding: 42px 40px 40px 158px;
 }
 
-#music .number { background-position:   0px 0px; }
-#events .number { background-position: -78px 0px; }
-#social .number { background-position:-156px 0px; }
-#about .number { background-position:-234px 0px; }
-#contact .number { background-position:-312px 0px; }
+#music .number { background-position:   0px -121px; }
+#events .number { background-position: -78px -121px; }
+#social .number { background-position:-156px -121px; }
+#about .number { background-position:-234px -121px; }
+#contact .number { background-position:-312px -121px; }
 
 .bright { color: #fff; }
 .dark { color: #454545; }
@@ -185,18 +203,17 @@ section .content {
     margin-top: 35px;
 }
 
-#music .top {
-    margin-top: 0;
-}
-
 .release .catalog_number,
-.release .info {
+.release .info,
+#events .date,
+#events .info {
     color: #454545;
     display: block;
     float: left;
 }
 
-.release .catalog_number {
+.release .catalog_number,
+#events .date {
     clear: left;
 }
 
@@ -205,13 +222,28 @@ section .content {
     color: #fff;
 }
 
-.release a {
+.release a,
+#events a {
     display: block;
     margin-top: 10px;
 }
 
-#events {
-    overflow: hidden;
+.release .button {
+    width: 148px;
+    height: 30px;
+}
+
+.release .button:link,
+.release .button:visited {
+    background-position: 0 -199px;
+}
+
+.release .button:hover {
+    background-position: 0 -229px;
+}
+
+.release .button:active {
+    background-position: 0 -259px;
 }
 
 #events ul {
@@ -223,27 +255,31 @@ section .content {
     overflow: hidden;
 }
 
-#events .date,
-#events .info {
-    display: block;
-    float: left;
+
+#events .button {
+    width: 171px;
+    height: 30px;
 }
 
-#events .date {
-    clear: left;
+#events .button:link,
+#events .button:visited {
+    background-position: -148px -199px;
 }
 
-#events .title {
-    font-weight: bold;
+#events .button:hover {
+    background-position: -148px -229px;
 }
 
-#events a {
-    display: block;
-    margin-top: 10px;
+#events .button:active {
+    background-position: -148px -259px;
 }
 
 
 
+
+.top {
+    margin-top: 0;
+}
 
 
 
