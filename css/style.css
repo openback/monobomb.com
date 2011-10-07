@@ -128,6 +128,7 @@ em { font-style: italic; }
     font-size: 2em;
     line-height: 1.2em;
     position: relative;
+    padding-right; 40px;
 }
 
 section .number,
@@ -177,7 +178,7 @@ section .number {
 }
 
 section .content {
-    padding: 42px 40px 40px 158px;
+    padding: 42px 0px 40px 158px;
 }
 
 #music .number { background-position:   0px -121px; }
