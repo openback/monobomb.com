@@ -98,15 +98,30 @@ p {
     margin-bottom: 40px;
 }
 
+a:link,
+a:visited {
+    color: #6c5eb5;
+    text-decoration: none;
+}
+
+h1 {
+    color: #454545;
+    font-weight: normal;
+}
+
+b { font-weight: bold; }
+em { font-style: italic; }
+
 .wrapper {
     max-width: 960px;
     margin: 0 auto;
-    font-size: 1.8em;
+    font-size: 2em;
     line-height: 1.2em;
     position: relative;
 }
 
 header img {
+    display: block;
     margin: 40px;
 }
 
@@ -117,12 +132,12 @@ footer {
 }
 
 footer .wrapper {
-    padding: 40px 0 40px 0;
-    font-size: 0.7em;
+    padding: 52px 0 40px 0;
+    font-size: 0.75em;
     text-align: center;
 }
 
-article {
+section {
     width: 100%;
     min-height: 158px;
     background-color: #080808;
@@ -131,9 +146,9 @@ article {
     color: #fff;
 }
 
-article .number {
+section .number {
     position: absolute;
-    top: 40px;
+    top: 52px;
     left: 40px;
     width: 78px;
     height: 78px;
@@ -143,8 +158,8 @@ article .number {
     background-image: url('../images/circled-numbers.png');
 }
 
-article .content {
-    padding: 40px 40px 40px 158px;
+section .content {
+    padding: 42px 40px 40px 158px;
 }
 
 #music .number { background-position:   0px 0px; }
@@ -153,11 +168,79 @@ article .content {
 #about .number { background-position:-234px 0px; }
 #contact .number { background-position:-312px 0px; }
 
+.bright { color: #fff; }
+.dark { color: #454545; }
+.purp { color: #6c5eb5; }
 
 
+#social a,
+#contact a {
+    display: block;
+    margin-bottom: 10px;
+}
 
+.release {
+    overflow: hidden;
+    display: block;
+    margin-top: 35px;
+}
 
+#music .top {
+    margin-top: 0;
+}
 
+.release .catalog_number,
+.release .info {
+    color: #454545;
+    display: block;
+    float: left;
+}
+
+.release .catalog_number {
+    clear: left;
+}
+
+.release .title,
+.release .artist {
+    color: #fff;
+}
+
+.release a {
+    display: block;
+    margin-top: 10px;
+}
+
+#events {
+    overflow: hidden;
+}
+
+#events ul {
+    list-style-type: none;
+    margin: 10px 0 0;
+}
+
+#events li {
+    overflow: hidden;
+}
+
+#events .date,
+#events .info {
+    display: block;
+    float: left;
+}
+
+#events .date {
+    clear: left;
+}
+
+#events .title {
+    font-weight: bold;
+}
+
+#events a {
+    display: block;
+    margin-top: 10px;
+}
 
 
 
