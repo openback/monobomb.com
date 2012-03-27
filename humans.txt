@@ -23,4 +23,4 @@
 /* SITE */
   Standards: HTML5, CSS3
   Components: Modernizr, jQuery
-  Software: vim, Adobe Photoshop
+  Software: vim, Adobe Photoshop, GIMP
