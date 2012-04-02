@@ -503,6 +503,9 @@ article.product:after {
   background-repeat: repeat-x;
   bottom: 0;
 }
+article.product + .product:before {
+  display: none;
+}
 article.product .framed {
   display: inline-block;
   position: relative;
