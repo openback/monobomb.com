@@ -1,0 +1,3 @@
+[submodule "js/box-sizing"]
+	path = js/box-sizing
+	url =git@github.com:Schepp/box-sizing-polyfill.git
