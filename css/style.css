@@ -158,15 +158,8 @@ a:hover,
 a:active {
   outline: none;
 }
-ul,
-ol {
-  margin-left: 2em;
-}
-ol {
-  list-style-type: decimal;
-}
-nav ul,
-nav li {
+ol,
+ul {
   margin: 0;
   list-style: none;
   list-style-image: none;
@@ -292,288 +285,340 @@ a:hover {
     \\ ========================================== //
 */
 /* Macros and Variables */
+.main-background-image {
+  background-image: url('http://monobomb.com/shop/images/bg.png');
+}
+.sprite {
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+}
 .icon-back {
   display: block;
   width: 119px;
   height: 119px;
-  background-image: url('/images/thangz.png');
-  background-position: -1px -1px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -1px -122px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
 }
-.icon-back:hover,
-.icon-backactive {
-  background-position: -121px -1px;
+.icon-back:hover {
+  background-position: -121px -122px;
 }
-.icon-back-hover {
-  display: block;
-  width: 119px;
-  height: 120px;
-  background-image: url('/images/thangz.png');
-  background-position: -121px -1px;
-  text-indent: -9999px;
+.icon-back:active {
+  background-position: -241px -122px;
 }
 .icon-home {
   display: block;
   width: 119px;
   height: 120px;
-  background-image: url('/images/thangz.png');
-  background-position: -241px -1px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -1px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
 }
 .icon-right {
   display: block;
   width: 119px;
   height: 120px;
-  background-image: url('/images/thangz.png');
-  background-position: -361px -1px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -121px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
 }
 .icon-stop {
   display: block;
   width: 119px;
   height: 120px;
-  background-image: url('/images/thangz.png');
-  background-position: -481px -1px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -241px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
 }
 .icon-cart {
   display: block;
   width: 49px;
   height: 50px;
-  background-image: url('/images/thangz.png');
-  background-position: -601px -1px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -361px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
 }
 .icon-cart:hover {
-  background-position: -601px -52px;
+  background-position: -361px -52px;
 }
 .icon-cart:active {
-  background-position: -601px -103px;
+  background-position: -361px -103px;
 }
 .cart-message-left-off {
   display: block;
   width: 15px;
   height: 50px;
-  background-image: url('/images/thangz.png');
-  background-position: -651px -1px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -411px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
 }
 .cart-message-left-on {
   display: block;
   width: 15px;
   height: 50px;
-  background-image: url('/images/thangz.png');
-  background-position: -651px -52px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -411px -52px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
 }
 .cart-message-middle-off {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  *behavior: url('/js/box-sizing/boxsizing.htc');
+  behavior: url('http://monobomb.com/js/box-sizing/boxsizing.htc');
   height: 50px;
-  background-image: url('/images/thangz.png');
-  background-position: 0 -149px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -270px;
   background-repeat: repeat-y;
 }
 .cart-message-middle-on {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  *behavior: url('/js/box-sizing/boxsizing.htc');
+  behavior: url('http://monobomb.com/js/box-sizing/boxsizing.htc');
   height: 50px;
-  background-image: url('/images/thangz.png');
-  background-position: 0 -200px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -321px;
   background-repeat: repeat-y;
 }
 .cart-message-right-off {
   display: block;
   width: 25px;
   height: 50px;
-  background-image: url('/images/thangz.png');
-  background-position: -663px -1px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -423px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
 }
 .cart-message-right-on {
   display: block;
   width: 25px;
   height: 50px;
-  background-image: url('/images/thangz.png');
-  background-position: -663px -52px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -423px -52px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
 }
 .button-left-off {
   display: block;
   width: 10px;
   height: 40px;
-  background-image: url('/images/thangz.png');
-  background-position: -689px -1px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -449px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
 }
 .button-left-on {
   display: block;
   width: 10px;
   height: 40px;
-  background-image: url('/images/thangz.png');
-  background-position: -689px -42px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -449px -42px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
 }
 .button-middle-off {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  *behavior: url('/js/box-sizing/boxsizing.htc');
+  behavior: url('http://monobomb.com/js/box-sizing/boxsizing.htc');
   height: 40px;
-  background-image: url('/images/thangz.png');
-  background-position: 0 -251px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -372px;
   background-repeat: repeat-x;
 }
 .button-middle-on {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  *behavior: url('/js/box-sizing/boxsizing.htc');
+  behavior: url('http://monobomb.com/js/box-sizing/boxsizing.htc');
   height: 40px;
-  background-image: url('/images/thangz.png');
-  background-position: 0 -292px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -413px;
   background-repeat: repeat-x;
 }
 .button-right-off {
   display: block;
   width: 10px;
   height: 40px;
-  background-image: url('/images/thangz.png');
-  background-position: -718px -1px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -478px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
 }
 .button-right-on {
   display: block;
   width: 10px;
   height: 40px;
-  background-image: url('/images/thangz.png');
-  background-position: -718px -42px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -478px -42px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
 }
-.icon-shirt-off {
+.icon-shirt {
   display: block;
   width: 39px;
   height: 40px;
-  background-image: url('/images/thangz.png');
-  background-position: -729px -1px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -489px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
 }
-.icon-shirt-on {
-  display: block;
-  width: 39px;
-  height: 40px;
-  background-image: url('/images/thangz.png');
-  background-position: -729px -42px;
-  text-indent: -9999px;
+.icon-shirt:hover {
+  background-position: -489px -42px;
+}
+.icon-shirt:active {
+  background-position: -489px -83px;
 }
 .icon-eye {
   display: block;
   width: 39px;
   height: 40px;
-  background-image: url('/images/thangz.png');
-  background-position: -769px -1px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -529px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
 }
 .icon-trash {
   display: block;
   width: 39px;
   height: 40px;
-  background-image: url('/images/thangz.png');
-  background-position: -809px -1px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -569px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
 }
-.icon-x-off {
+.icon-x {
   display: block;
   width: 39px;
   height: 40px;
-  background-image: url('/images/thangz.png');
-  background-position: -849px -1px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -609px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
 }
-.icon-x-on {
-  display: block;
-  width: 39px;
-  height: 40px;
-  background-image: url('/images/thangz.png');
-  background-position: -849px -42px;
-  text-indent: -9999px;
+.icon-x:hover {
+  background-position: -609px -42px;
+}
+.icon-x:active {
+  background-position: -609px -83px;
 }
 .icon-box-left {
   display: block;
   width: 5px;
   height: 40px;
-  background-image: url('/images/thangz.png');
-  background-position: -889px -1px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -649px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
 }
 .box-middle {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  *behavior: url('/js/box-sizing/boxsizing.htc');
+  behavior: url('http://monobomb.com/js/box-sizing/boxsizing.htc');
   height: 40px;
-  background-image: url('/images/thangz.png');
-  background-position: 0 -374px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -495px;
   background-repeat: repeat-x;
 }
 .icon-box-right {
   display: block;
   width: 5px;
   height: 40px;
-  background-image: url('/images/thangz.png');
-  background-position: -923px -1px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -683px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
 }
 .icon-endcap {
   display: block;
   width: 5px;
   height: 40px;
-  background-image: url('/images/thangz.png');
-  background-position: -929px -1px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -689px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+}
+.icon-big-back {
+  display: block;
+  width: 119px;
+  height: 120px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -1px -122px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+}
+.icon-big-back:hover {
+  background-position: -121px -122px;
+}
+.icon-big-back:active {
+  background-position: -241px -122px;
+}
+.rule-simple {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -246px;
+  background-repeat: repeat-x;
 }
 .rule-nav-bottom {
   display: block;
   height: 4px;
   width: 100%;
-  background-image: url('/images/thangz.png');
-  background-position: 0 -128px;
-  background-repeat: repeat-x;
-}
-.rule-header-bottom {
-  display: block;
-  height: 2px;
-  width: 100%;
-  background-image: url('/images/thangz.png');
-  background-position: 0 -122px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -248px;
   background-repeat: repeat-x;
 }
 .rule-cart-bottom {
   display: block;
   height: 5px;
   width: 100%;
-  background-image: url('/images/thangz.png');
-  background-position: 0 -133px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -254px;
   background-repeat: repeat-x;
 }
 .rule-dotted {
   display: block;
   height: 2px;
   width: 100%;
-  background-image: url('/images/thangz.png');
-  background-position: 0 -139px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -260px;
   background-repeat: repeat-x;
 }
 .rule-footer-top {
   display: block;
   height: 6px;
   width: 100%;
-  background-image: url('/images/thangz.png');
-  background-position: 0 -142px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -263px;
   background-repeat: repeat-x;
 }
 /* styles */
@@ -587,7 +632,7 @@ a:hover {
   background-color: #352879;
 }
 p {
-  margin-bottom: 40px;
+  margin-bottom: 1em;
 }
 a {
   -webkit-transition: color .20s linear;
@@ -599,12 +644,14 @@ a:visited {
   color: #6c5eb5;
   text-decoration: none;
 }
-a:hover,
-a:active {
+a:hover {
   color: #beb1ff;
 }
+a:active {
+  color: #ffffff;
+}
 a:link {
-  -webkit-tap-highlight-color: #352879;
+  -webkit-tap-highlight-color: #ffffff;
 }
 h1 {
   font-weight: bold;
@@ -629,14 +676,22 @@ em {
 .purp {
   color: #352879;
 }
+.sku {
+  color: #7f7f7f;
+}
 .wrapper {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  *behavior: url('/js/box-sizing/boxsizing.htc');
-  width: 808px;
+  behavior: url('http://monobomb.com/js/box-sizing/boxsizing.htc');
+  display: block;
+  width: 940px;
   margin: 0 auto;
+  padding: 0 10px;
   position: relative;
+}
+html {
+  height: 100%;
 }
 body {
   height: 100%;
@@ -645,16 +700,16 @@ body {
   line-height: 100%;
   color: #ffffff;
   text-shadow: 0px 2px 0px #000;
-  background-color: #111;
+  background-image: url('http://monobomb.com/shop/images/bg.png');
 }
-body > nav,
-body > header,
-body > section,
-body > footer {
+body #push_wrapper > nav,
+body #push_wrapper > header,
+body #push_wrapper > section,
+body #push_wrapper > footer {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  *behavior: url('/js/box-sizing/boxsizing.htc');
+  behavior: url('http://monobomb.com/js/box-sizing/boxsizing.htc');
   width: 100%;
   min-width: 808px;
 }
@@ -664,18 +719,19 @@ footer {
   font-size: 1em;
   line-height: 1.2em;
 }
-body > header {
+#push_wrapper > header {
   position: relative;
   background-color: #6c5eb5;
   padding: 19px 0;
-  font-size: 0.75em;
+  font-size: 0.8em;
   line-height: 50px;
   overflow: hidden;
 }
-body > header nav {
+#push_wrapper > header nav {
+  width: 500px;
   float: left;
 }
-body > header li {
+#push_wrapper > header li {
   display: inline-block;
   min-height: 1em;
   display: -moz-inline-stack;
@@ -685,124 +741,168 @@ body > header li {
   *display: inline;
   _height: 1em;
 }
-body > header li a:not(.contact-us) {
+#push_wrapper > header li a:not(.contact-us) {
   padding-right: 80px;
 }
-body > header li a:link,
-body > header li a:visited {
+#push_wrapper > header li a:link,
+#push_wrapper > header li a:visited {
   color: #ffffff;
 }
-body > header li a:hover,
-body > header li a:active {
+#push_wrapper > header li a:hover,
+#push_wrapper > header li a:active {
   color: black;
   background-color: #ffffff;
   text-shadow: none;
 }
-body > header #cart {
+#push_wrapper > header #cart-notice {
+  width: 400px;
   float: right;
 }
-body > header #cart #cart-message {
+#push_wrapper > header #cart-notice #cart-message {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  *behavior: url('/js/box-sizing/boxsizing.htc');
+  behavior: url('http://monobomb.com/js/box-sizing/boxsizing.htc');
   height: 50px;
-  background-image: url('/images/thangz.png');
-  background-position: 0 -149px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -270px;
   background-repeat: repeat-y;
-  display: inline-block;
+  display: block;
   position: relative;
+  float: right;
   margin-right: 30px;
   color: #7f7f7f;
 }
-body > header #cart #cart-message .count {
+#push_wrapper > header #cart-notice #cart-message .count {
   color: white;
 }
-body > header #cart #cart-message:before {
+#push_wrapper > header #cart-notice #cart-message:before {
   content: '';
   display: block;
   width: 15px;
   height: 50px;
-  background-image: url('/images/thangz.png');
-  background-position: -651px -1px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -411px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
   display: block;
   position: absolute;
   top: 0;
   left: -15px;
 }
-body > header #cart #cart-message:after {
+#push_wrapper > header #cart-notice #cart-message:after {
   content: '';
   display: block;
   width: 25px;
   height: 50px;
-  background-image: url('/images/thangz.png');
-  background-position: -663px -1px;
-  text-indent: -9999px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -423px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
   display: block;
   position: absolute;
   top: 0;
   left: 100%;
 }
-body > header #cart .cart-icon {
+#push_wrapper > header #cart-notice .cart-icon {
   display: block;
   width: 49px;
   height: 50px;
-  background-image: url('/images/thangz.png');
-  background-position: -601px -1px;
-  text-indent: -9999px;
-  display: inline-block;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -361px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  display: block;
+  float: right;
 }
-body > header #cart .cart-icon:hover {
-  background-position: -601px -52px;
+#push_wrapper > header #cart-notice .cart-icon:hover {
+  background-position: -361px -52px;
 }
-body > header #cart .cart-icon:active {
-  background-position: -601px -103px;
+#push_wrapper > header #cart-notice .cart-icon:active {
+  background-position: -361px -103px;
 }
-body > header:after {
+#push_wrapper > header:after {
   content: "";
   display: block;
   height: 4px;
   width: 100%;
-  background-image: url('/images/thangz.png');
-  background-position: 0 -128px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -248px;
   background-repeat: repeat-x;
   position: absolute;
   bottom: 0px;
+}
+#push_wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+}
+#content {
+  padding-bottom: 200px;
 }
 #content > header {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  *behavior: url('/js/box-sizing/boxsizing.htc');
+  behavior: url('http://monobomb.com/js/box-sizing/boxsizing.htc');
   margin-top: 20px;
 }
-#content > header .home {
+#content > header .where-to {
+  float: left;
+  margin-right: 20px;
+}
+#content > header .where-to.home {
   display: block;
   width: 119px;
   height: 120px;
-  background-image: url('/images/thangz.png');
-  background-position: -241px -1px;
-  text-indent: -9999px;
-  float: left;
-  margin-right: 20px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -1px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+}
+#content > header .where-to.back {
+  display: block;
+  width: 119px;
+  height: 120px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -1px -122px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+}
+#content > header .where-to.back:hover {
+  background-position: -121px -122px;
+}
+#content > header .where-to.back:active {
+  background-position: -241px -122px;
 }
 #content > header .wrapper:after {
   content: "";
   display: block;
   height: 2px;
   width: 100%;
-  background-image: url('/images/thangz.png');
-  background-position: 0 -122px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -246px;
   background-repeat: repeat-x;
   margin: 20px 0;
 }
 footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
   padding: 0 0 40px 0;
   color: #7f7f7f;
   font-size: 0.75em;
   text-align: center;
   background-color: #000;
+  margin-top: 60px;
 }
 footer .wrapper {
   margin-top: 52px;
@@ -812,14 +912,13 @@ footer:before {
   display: block;
   height: 6px;
   width: 100%;
-  background-image: url('/images/thangz.png');
-  background-position: 0 -142px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -263px;
   background-repeat: repeat-x;
 }
-#content {
-  margin-bottom: 60px;
-}
-#content > .main a.product {
+body#home a.product,
+body#main a.product,
+body#products a.product {
   display: inline-block;
   min-height: 1em;
   display: -moz-inline-stack;
@@ -829,72 +928,770 @@ footer:before {
   *display: inline;
   _height: 1em;
   position: relative;
-  width: 399px;
+  width: 300px;
+  margin-right: 10px;
   margin-bottom: 20px;
   overflow: hidden;
+  font-size: 1.1em;
+  line-height: 1.1em;
 }
-#content > .main a.product figure {
-  width: 399px;
+body#home a.product figure,
+body#main a.product figure,
+body#products a.product figure {
+  width: 300px;
 }
-#content > .main a.product:nth-child(2n+1) {
-  margin-right: 10px;
+body#home a.product:nth-child(3n),
+body#main a.product:nth-child(3n),
+body#products a.product:nth-child(3n) {
+  margin-right: 0;
 }
-#content > .main a.product figcaption {
+body#home a.product figcaption,
+body#main a.product figcaption,
+body#products a.product figcaption {
   overflow: hidden;
-}
-#content > .main a.product .sku,
-#content > .main a.product .name,
-#content > .main a.product .price {
-  display: block;
-}
-#content > .main a.product .name {
-  color: #7f7f7f;
-}
-#content > .main a.product .price {
   color: white;
 }
-#content > .main a.product .arrow {
+body#home a.product .sku,
+body#main a.product .sku,
+body#products a.product .sku,
+body#home a.product .name,
+body#main a.product .name,
+body#products a.product .name,
+body#home a.product .price,
+body#main a.product .price,
+body#products a.product .price {
   display: block;
-  width: 399px;
-  height: 266px;
+}
+body#home a.product .name,
+body#main a.product .name,
+body#products a.product .name {
+  font-weight: bold;
+}
+body#home a.product .arrow,
+body#main a.product .arrow,
+body#products a.product .arrow {
+  display: block;
+  width: 300px;
+  height: 300px;
   position: absolute;
   top: 0;
-  left: -399px;
-  background-image: url('/images/item_overlay.png');
+  left: -300px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -536px;
   background-repeat: no-repeat;
   -webkit-transition: left 0.2s ease-out;
   -moz-transition: left 0.2s ease-out;
   transition: left 0.2s ease-out;
 }
-#content > .main a.product:hover .arrow {
+body#home a.product:hover figcaption,
+body#main a.product:hover figcaption,
+body#products a.product:hover figcaption {
+  color: #beb1ff;
+}
+body#product #photos .photo {
+  display: inline-block;
+  min-height: 1em;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  _height: 1em;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+body#product #photos .photo:nth-child(3n) {
+  margin-right: 0;
+}
+body#product #photos .photo .zoom {
+  display: block;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-repeat: no-repeat;
+  background-position: 0 -837px;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0.0;
+}
+body#product #photos .photo:hover .zoom {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1.0;
+}
+body#product #photos .photo:active .zoom {
+  background-position: -300px -837px;
+}
+body#product #details {
+  display: block;
+  overflow: hidden;
+}
+body#product #details #info,
+body#product #details #buy {
+  display: block;
+}
+body#product #details #info:before,
+body#product #details #buy:before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -246px;
+  background-repeat: repeat-x;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 5px;
+}
+body#product #details #info {
+  width: 610px;
+  float: left;
+}
+body#product #details #info ul {
+  display: block;
+  color: #7f7f7f;
+  font-style: italic;
+}
+body#product #details #info ul:before {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -246px;
+  background-repeat: repeat-x;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0 0 1em 0;
+}
+body#product #details #info ul a:link,
+body#product #details #info ul a:visited {
+  color: #6f3d86;
+}
+body#product #details #info ul a:hover,
+body#product #details #info ul a:focus {
+  color: #6c5eb5;
+}
+body#product #details #info ul a:active {
+  color: white;
+}
+body#product #details #buy {
+  width: 300px;
+  float: right;
+}
+body#product #details #buy .price {
+  color: white;
+}
+body#product #details #buy .sizing {
+  line-height: 40px;
+  font-style: italic;
+}
+body#product #details #buy .sizing a {
+  display: block;
+  width: 39px;
+  height: 40px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -489px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 1em;
+  vertical-align: top;
+}
+body#product #details #buy .sizing a:hover {
+  background-position: -489px -42px;
+}
+body#product #details #buy .sizing a:active {
+  background-position: -489px -83px;
+}
+body#product #details #buy .add-to-cart {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  behavior: url('http://monobomb.com/js/box-sizing/boxsizing.htc');
+  height: 40px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -372px;
+  background-repeat: repeat-x;
+  position: relative;
+  display: inline-block;
+  min-width: 40px;
+  margin-right: 5px;
+  padding: 0 10px;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+body#product #details #buy .add-to-cart:before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 40px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -449px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  display: block;
+  float: left;
+}
+body#product #details #buy .add-to-cart:after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 40px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -478px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  display: block;
+  float: right;
+}
+body#product #details #buy .add-to-cart:hover {
+  background-position: 0 -413px;
+}
+body#product #details #buy .add-to-cart:hover:before {
+  background-position: -449px -42px;
+}
+body#product #details #buy .add-to-cart:hover:after {
+  background-position: -478px -42px;
+}
+body#product #details #buy .add-to-cart:active {
+  color: black;
+  text-shadow: 0 2px 0 white;
+  background-position: 0 -454px;
+}
+body#product #details #buy .add-to-cart:active:before {
+  background-position: -449px -83px;
+}
+body#product #details #buy .add-to-cart:active:after {
+  background-position: -478px -83px;
+}
+body#product #details #buy .options {
+  overflow: hidden;
+  position: relative;
+}
+body#product #details #buy .options input {
+  position: absolute;
+  left: -9999px;
+}
+body#product #details #buy .options label {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  behavior: url('http://monobomb.com/js/box-sizing/boxsizing.htc');
+  height: 40px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -372px;
+  background-repeat: repeat-x;
+  position: relative;
+  display: inline-block;
+  min-width: 40px;
+  margin-right: 5px;
+  padding: 0 10px;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  border: none;
+  line-height: 40px;
+  padding: 0;
+}
+body#product #details #buy .options label:before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 40px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -449px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  display: block;
+  float: left;
+}
+body#product #details #buy .options label:after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 40px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -478px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  display: block;
+  float: right;
+}
+body#product #details #buy .options label:hover {
+  background-position: 0 -413px;
+}
+body#product #details #buy .options label:hover:before {
+  background-position: -449px -42px;
+}
+body#product #details #buy .options label:hover:after {
+  background-position: -478px -42px;
+}
+body#product #details #buy .options label:active {
+  color: black;
+  text-shadow: 0 2px 0 white;
+  background-position: 0 -454px;
+}
+body#product #details #buy .options label:active:before {
+  background-position: -449px -83px;
+}
+body#product #details #buy .options label:active:after {
+  background-position: -478px -83px;
+}
+body#product #details #buy .options input:checked + label {
+  background-position: 0 -454px;
+  color: black;
+  text-shadow: none;
+}
+body#product #details #buy .options input:checked + label:before {
+  background-position: -449px -83px;
+}
+body#product #details #buy .options input:checked + label:after {
+  background-position: -478px -83px;
+}
+body#product #details h1,
+body#product #details h2 {
+  font-size: 1.1em;
+  line-height: 1.1em;
+}
+body#product #details h1,
+body#product #details h2,
+body#product #details .options,
+body#product #details .sizing {
+  margin-bottom: 0.5em;
+}
+body#product #details h1:after,
+body#product #details h2:after,
+body#product #details .options:after,
+body#product #details .sizing:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -260px;
+  background-repeat: repeat-x;
+  margin-top: 0.5em;
+}
+body#cart #content .wrapper {
+  overflow: hidden;
+}
+body#cart table {
+  margin-bottom: 40px;
+}
+body#cart thead {
+  color: #7f7f7f;
+}
+body#cart a.delete {
+  display: block;
+  width: 39px;
+  height: 40px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -609px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  float: right;
+  margin-right: 15px;
+}
+body#cart a.delete:hover {
+  background-position: -609px -42px;
+}
+body#cart a.delete:active {
+  background-position: -609px -83px;
+}
+body#cart th,
+body#cart td {
+  vertical-align: middle;
+  text-align: left;
+  padding: 10px 0;
+}
+body#cart th {
+  font-weight: bold;
+}
+body#cart th:nth-child(1) {
+  width: 130px;
+}
+body#cart th:nth-child(2) {
+  width: 460px;
+}
+body#cart th:nth-child(3) {
+  width: 100px;
+}
+body#cart th:nth-child(4) {
+  width: 100px;
+}
+body#cart th:nth-child(5) {
+  width: 140px;
+}
+body#cart th:nth-child(6) {
+  width: 80px;
+}
+body#cart th:nth-child(3),
+body#cart th:nth-child(4),
+body#cart th:nth-child(5),
+body#cart th:nth-child(6) {
+  padding-left: 20px;
+}
+body#cart th:nth-child(3),
+body#cart td:nth-child(3),
+body#cart th:nth-child(4),
+body#cart td:nth-child(4),
+body#cart th:nth-child(5),
+body#cart td:nth-child(5) {
+  text-align: right;
+}
+body#cart thead tr {
+  border-bottom: 1px dotted #3e3e3e;
+}
+body#cart thead .eye {
+  display: block;
+  width: 39px;
+  height: 40px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -529px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-left: 15px;
+  overflow: visible;
+  text-indent: -9999px;
+}
+body#cart thead .eye:before {
+  content: '';
+  width: 645px;
+  display: block;
+  width: 5px;
+  height: 40px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -689px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: -15px;
+}
+body#cart thead .delete {
+  display: block;
+  width: 39px;
+  height: 40px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -569px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-right: 15px;
+  overflow: visible;
+  text-indent: -9999px;
+  float: right;
+}
+body#cart thead .delete:after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 40px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -689px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 44px;
+}
+body#cart .thumbnail img {
+  margin-right: 20px;
+}
+body#cart tr + tr td {
+  border-top: 1px dotted #3e3e3e;
+}
+body#cart tr.last {
+  border-bottom: 4px solid black;
+}
+body#cart tr.last + tr {
+  border-top: 1px solid #3e3e3e;
+  margin-top: 5px;
+}
+body#cart tr.separate td,
+body#cart tr.separate + tr td {
+  padding: 20px 0;
+}
+body#cart tr.separate .shipping-to,
+body#cart tr.separate .shipping {
+  color: #7f7f7f;
+  font-weight: bold;
+}
+body#cart tr.separate + tr .total {
+  color: #7f7f7f;
+  font-weight: bold;
+}
+body#cart tr.separate + tr td {
+  text-align: right;
+}
+form dd.input,
+form div.input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  behavior: url('http://monobomb.com/js/box-sizing/boxsizing.htc');
+  height: 40px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -495px;
+  background-repeat: repeat-x;
+  position: relative;
+  left: 5px;
+  display: inline-block;
+  margin-right: 5px;
+}
+form dd.input:before,
+form div.input:before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 40px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -649px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: -5px;
+}
+form dd.input:after,
+form div.input:after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 40px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -683px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+form dd.input input,
+form div.input input {
+  display: inline-block;
+  min-height: 1em;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  _height: 1em;
+  width: 25px;
+  height: 40px;
+  margin-right: 5px;
+  padding: 0;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: transparent;
+  text-align: right;
+  line-height: 40px;
+}
+form textarea {
+  display: inline-block;
+  min-height: 1em;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  _height: 1em;
+  width: 100%;
+  height: 5em;
+  border: 1px solid #683b7d;
+  background-color: black;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+form input.button {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  behavior: url('http://monobomb.com/js/box-sizing/boxsizing.htc');
+  height: 40px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: 0 -372px;
+  background-repeat: repeat-x;
+  position: relative;
+  display: inline-block;
+  min-width: 40px;
+  margin-right: 5px;
+  padding: 0 10px;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  border: none;
+  float: right;
+}
+form input.button:before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 40px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -449px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  display: block;
+  float: left;
+}
+form input.button:after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 40px;
+  background-image: url('http://monobomb.com/shop/images/thangz.png');
+  background-position: -478px -1px;
+  white-space: nowrap;
+  text-indent: 100%;
+  overflow: hidden;
+  display: block;
+  float: right;
+}
+form input.button:hover {
+  background-position: 0 -413px;
+}
+form input.button:hover:before {
+  background-position: -449px -42px;
+}
+form input.button:hover:after {
+  background-position: -478px -42px;
+}
+form input.button:active {
+  color: black;
+  text-shadow: 0 2px 0 white;
+  background-position: 0 -454px;
+}
+form input.button:active:before {
+  background-position: -449px -83px;
+}
+form input.button:active:after {
+  background-position: -478px -83px;
+}
+form input.button.continue {
+  font-style: italic;
+}
+body#success #content h1 {
+  font-size: 14em;
+  font-weight: normal;
+  line-height: 1em;
+}
+body#success #content p {
+  font-size: 2em;
+  line-height: 1em;
+}
+body#contact .wrapper.main {
+  overflow: hidden;
+}
+body#contact dt,
+body#contact dd {
+  float: left;
+  margin: 10px 0;
+}
+body#contact dt {
+  clear: left;
+  width: 100px;
+  margin-right: 20px;
+}
+body#contact dd {
+  width: 780px;
+}
+body#contact dd input[type=text],
+body#contact dd textarea {
+  width: 780px;
+  text-align: left;
+  color: white;
+}
+body#contact dd.captcha {
+  height: auto;
+  vertical-align: top;
+}
+body#contact dd.captcha img,
+body#contact dd.captcha div.input {
+  display: inline-block;
+  float: left;
+}
+body#contact dd.captcha img {
+  padding-right: 10px;
+}
+body#contact dd.captcha input {
+  width: 635px;
+}
+.csstransitions #content > .main a.product:hover figcaption {
+  color: white;
+}
+.csstransitions #content > .main a.product:hover .arrow {
   left: 0;
 }
-@media screen and (max-width: 580px) {
-  body {
-    width: 100%;
-  }
-  body > header,
-  body > section,
-  body > footer {
-    min-width: 100%;
-    font-size: 1.1em;
-    line-height: 1.5em;
-  }
-  p {
-    margin-bottom: 20px;
-  }
-  .wrapper {
-    width: auto;
-    margin: 0;
-  }
-  header {
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  footer {
-    padding: 22px 0 20px 0;
-  }
+.csstransitions #content > .main a.product:active .arrow {
+  background-position: -300px -536px;
 }
+/*
+@media screen and (max-width: 580px) {
+	body {
+		width: 100%;
+		> header,
+		> section,
+		> footer{
+			min-width: 100%;
+			font-size: 1.1em;
+			line-height: 1.5em;
+		}
+	}
+
+	p {
+		margin-bottom: 20px;
+	}
+
+	.wrapper {
+		width: auto;
+		margin: 0;
+
+	}
+
+	header {
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+
+	footer	{
+		padding: 22px 0 20px 0;
+	}
+
+}
+*/
 /* MORE BOILERPLATE CLASSES */
 .ir {
   display: block;
