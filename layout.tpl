@@ -14,9 +14,9 @@
 		<link href="http://monobomb.com/favicon.ico" rel="apple-touch-icon-precomposed">
 		<link rel="stylesheet" href="http://monobomb.com/css/Tex-Gyre-Adventor/stylesheet.css?v=2">
 		<link href="{{ theme | theme_css_url }}" rel="Stylesheet" type="text/css" />
-		<script src="{{ 'prototype' | theme_js_url }}" type="text/javascript"></script>
+		<!-- <script src="{{ 'prototype' | theme_js_url }}" type="text/javascript"></script>
 		<script src="{{ 'effects' | theme_js_url }}" type="text/javascript"></script>
-		<!-- <script src="{{ 'store' | theme_js_url }}" type="text/javascript"></script> -->
+		<script src="{{ 'store' | theme_js_url }}" type="text/javascript"></script> -->
 		<script src="{{ 'fancyzoom' | theme_js_url }}" type="text/javascript"></script>
 		<script src="{{ 'api' | theme_js_url }}" type="text/javascript"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
@@ -26,17 +26,21 @@
 			(function ($) {
 				$(document).ready(function () {
 					setupZoom();
+
+					$('form a.delete').on('click', function (e) {
+						e.preventDefault();
+
+						Cart.removeItem($(this).attr('id'), function (cart) {
+							location.reload();
+						});
+					});
+
+					$('input.continue.button').on('click', function (e) {
+							e.preventDefault();
+							location.href='http://monobomb.bigcartel.com';
+					});
 				});
 			}($j));
-		</script>
-		<script type="text/javascript" charset="utf-8">
-		/*
-			Store.currency_sign  = "{{ store.currency.sign }}";
-			Store.item_singular  = "item";
-			Store.item_plural  = "items";
-			Store.discount_off  = "% off";
-			Store.show_shipping = {{ cart.shipping.enabled }};
-			*/
 		</script>
 		{{ head_content }}
 		<script src="http://monobomb.com/js/libs/modernizr.custom.08729.js"></script>
@@ -59,7 +63,7 @@
 				</div>
 			</div></header>
 			<section id="content">
-				<header><div class="wrapper"><a href="/" class="where-to home">Home</a> <img src="http://monobomb.com/shop/images/logo.png" alt="monobomb" width="155" height="119"></div></header>
+				<header><div class="wrapper"><a href="/" class="where-to {% if page.permalink == "home" %}home{% else %}back{% endif %}">Home</a> <img src="http://monobomb.com/shop/images/logo.png" alt="monobomb" width="155" height="119"></div></header>
 				<div class="wrapper main">
 					{% if errors != blank %}
 					<div id="error" class="error">

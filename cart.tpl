@@ -16,8 +16,8 @@
 				<td{% if item.product.has_default_option %} class="optionless"{% endif %}>{{ item.product.name }} {% unless item.product.has_default_option %} <span class="option">({{ item.option.name }})</span>{% endunless %}
 				<td>{{ item.unit_price | money_with_sign }}
 				<td><div class="input"><input type="text" autocomplete="off" id="item_{{ item.id }}_qty" name="cart[update][{{ item.id }}]" value="{{ item.quantity }}"></div>
-				<td>{{ item.proce | money_with_sign }}
-				<td><a href="#" class="delete" title="Remove item" onclick="Store.removeItem({{ item.id }}); return false;">Remove</a>
+				<td>{{ item.price | money_with_sign }}
+				<td><a href="#" class="delete" title="Remove item" id="{{ item.id }}">Remove</a>
 	{% endfor %}
 	{% if cart.discount.enabled %}
 		<div id="cart_discount" class="clearfix">
@@ -57,7 +57,7 @@
 	</table>
 	<input type="submit" name="checkout" class="checkout button" value="Checkout">
 	<input type="submit" name="update"   class="update button"   value="Update Totals">
-	<input type="submit" name="continue" class="continue button" value="Continue Shopping" onclick="location.href='http://monobomb.bigcartel.com'">
+	<input type="submit" name="continue" class="continue button" value="Continue Shopping">
 </form>
 {% else %}
 <div id="cart_empty">

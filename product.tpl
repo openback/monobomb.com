@@ -20,7 +20,11 @@
 				{% for option in product.options %}<input type="radio" name="cart[add][id]" id="{{ option.id }}" value="{{ option.id }}"><label for="{{ option.id }}">{{option.name}}</label>{% endfor %}
 			</div>
 			{% endif %}
+			{% for category in product.categories %}
+				{% if category.name == 'Tees' %}
 			<div class="sizing"><a href="http://monobomb.com/shop/images/size_information.png">View</a> Size Information</div>
+				{% endif %}
+			{% endfor %}
 			<input class="add-to-cart" name="submit" type="submit" value="+ Add to cart">
 		</div>
 	</div>

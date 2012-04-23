@@ -18,64 +18,66 @@
 		<![endif]-->
 	</head>
 	<body id="cart">
-		<header><div class="wrapper">
-			<nav>
-				<ul>
-					<li><a href="http://monobomb.com" class="about">monobomb.com</a></li>
-					<li><a href="" class="contact-us">Contact Us</a></li>
-				</ul>
-			</nav>
-			<div id="cart-notice">
-				<a href="#" class="cart-icon">Vew cart</a>
-				<span id="cart-message">You have <span class="count">900</span> items in your cart.</span>
-			</div>
-		</div></header>
-		<section id="content">
-			<header><div class="wrapper"><a href="/home.html" class="where-to back">Home</a> <img src="/images/logo.png" alt="monobomb" width="155" height="119"></div></header>
-			<div class="wrapper cart">
-				<form>
-					<table class="contents">
-						<thead>
-							<tr>
-								<th class="thumbnail"><span class="eye">Thumbnail</span>
-								<th>Item #
-								<th>Price
-								<th>Qty.
-								<th>Subtotal
-								<th><span class="delete">Remove</span>
-						<tbody>
-							<tr>
-								<td class="thumbnail"><img src="images/products/xix004_cart.jpg" alt="XIX004" width="75" height="75">
-								<td>XIX002
-								<td>$9999.93
-								<td><div class="input"><input type="text" value="99"></div>
-								<td>$9999
-								<td><a href="#" class="delete">Remove</a>
-							<tr class="last">
-								<td class="thumbnail"><img src="images/products/xix004_cart.jpg" alt="XIX004" width="75" height="75">
-								<td>XIX002: The Closer We Get The Further We Are
-								<td>$9999.93
-								<td><div class="input"><input type="text" value="99"></div>
-								<td>$9999
-								<td><a href="#" class="delete">Remove</a>
-							<tr class="separate">
-								<td class="shipping-to">Shipping to:
-								<td colspan="2"><select><option>Please Select your Country</option></select>
-								<td class="shipping">Shipping
-								<td>$999,99
-								<td>
-							<tr>
-								<td colspan="4" class="total">Total
-								<td>$1999.98
-								<td>
-					</table>
-					<input type="submit" name="checkout" class="checkout button" value="Checkout">
-					<input type="submit" name="update"   class="update button"   value="Update Totals">
-					<input type="submit" name="continue" class="continue button" value="Continue Shopping" onclick="location.href='http://monobomb.bigcartel.com'">
-				</form>
-			</div>
-		</section>
-		<footer><div class="wrapper">&copy; 2012 monobomb records</div></footer>
+		<div id="push_wrapper">
+			<header><div class="wrapper">
+				<nav>
+					<ul>
+						<li><a href="http://monobomb.com" class="about">monobomb.com</a></li>
+						<li><a href="" class="contact-us">Contact Us</a></li>
+					</ul>
+				</nav>
+				<div id="cart-notice">
+					<a href="#" class="cart-icon">Vew cart</a>
+					<span id="cart-message">You have <span class="count">900</span> items in your cart.</span>
+				</div>
+			</div></header>
+			<section id="content">
+				<header><div class="wrapper"><a href="/home.html" class="where-to back">Home</a> <img src="/images/logo.png" alt="monobomb" width="155" height="119"></div></header>
+				<div class="wrapper cart">
+					<form>
+						<table class="contents">
+							<thead>
+								<tr>
+									<th class="thumbnail"><span class="eye">Thumbnail</span>
+									<th>Item #
+									<th>Price
+									<th>Qty.
+									<th>Subtotal
+									<th><span class="delete">Remove</span>
+							<tbody>
+								<tr>
+									<td class="thumbnail"><img src="images/products/xix004_cart.jpg" alt="XIX004" width="75" height="75">
+									<td>XIX002
+									<td>$9999.93
+									<td><div class="input"><input type="text" value="99"></div>
+									<td>$9999
+									<td><a href="#" id="1234" class="delete">Remove</a>
+								<tr class="last">
+									<td class="thumbnail"><img src="images/products/xix004_cart.jpg" alt="XIX004" width="75" height="75">
+									<td>XIX002: The Closer We Get The Further We Are
+									<td>$9999.93
+									<td><div class="input"><input type="text" value="99"></div>
+									<td>$9999
+									<td><a href="#" id="5678" class="delete">Remove</a>
+								<tr class="separate">
+									<td class="shipping-to">Shipping to:
+									<td colspan="2"><select><option>Please Select your Country</option></select>
+									<td class="shipping">Shipping
+									<td>$999,99
+									<td>
+								<tr>
+									<td colspan="4" class="total">Total
+									<td>$1999.98
+									<td>
+						</table>
+						<input type="submit" name="checkout" class="checkout button" value="Checkout">
+						<input type="submit" name="update"   class="update button"   value="Update Totals">
+						<input type="submit" name="continue" class="continue button" value="Continue Shopping" onclick="location.href='http://monobomb.bigcartel.com'">
+					</form>
+				</div>
+			</section>
+			<footer><div class="wrapper">&copy; 2012 monobomb records</div></footer>
+		</div>
 		<!--[if lt IE 7 ]>
 			<script src="js/libs/dd_belatedpng.js"></script>
 			<script> DD_belatedPNG.fix('img'); </script>
