@@ -447,6 +447,23 @@ section,
 article {
   padding: 0px 40px;
 }
+#about + article.news {
+  position: relative;
+}
+#about + article.news:before {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-image: url('/images/divider.png');
+  background-repeat: repeat-x;
+  top: 0px;
+}
+#about + article.news .wrapper {
+  padding-top: 44px;
+}
 article.news {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -613,6 +630,10 @@ a.button:active {
   }
   article.news + .news {
     margin-top: 0;
+  }
+  article.news img {
+    width: 100%;
+    height: auto;
   }
   article.product {
     padding: 20px;
